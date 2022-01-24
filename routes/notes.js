@@ -1,5 +1,5 @@
 const notes = require('express').Router();
-const { readDataFile, readCopyAppend } = require('../helpers/fsUtils');
+const { readDataFile, readCopyAppend, } = require('../helpers/fsUtils');
 const { v4: uuidv4 } = require('uuid');
 
 notes.get('/', (req, res) => {
@@ -15,7 +15,7 @@ notes.post('/', (req, res) => {
         const newNote = {
             title,
             text,
-            note_id: uuidv4()
+            id: uuidv4()
         };
 
         readCopyAppend(newNote, './db/notes.json');
@@ -24,5 +24,9 @@ notes.post('/', (req, res) => {
         res.error(`Error in adding note!`);
     }
 });
+
+// notes.delete('/', (req, res) => {
+//     deleteDataFile('./db/notes.json/${id}').then((data) => res.json(JSON.parse(data)));
+// });
 
 module.exports = notes;

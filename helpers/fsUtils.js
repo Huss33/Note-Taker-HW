@@ -19,4 +19,16 @@ const readCopyAppend = (content, file) => {
     });
 };
 
-module.exports = {readDataFile, writeInFile, readCopyAppend };
+// const deleteDataFile = (content, file) => {
+//     fs.readFile(file, 'utf8', (err, data) => {
+//         if (err) {
+//             console.error(err);
+//         } else {
+//             const jParseData = JSON.parse(data);
+//             jParseData.pop(content);
+//             writeInFile(file, jParseData);
+//         }
+//     })
+// } 
+
+module.exports = {readDataFile, writeInFile, readCopyAppend, };

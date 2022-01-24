@@ -1,6 +1,16 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Test Title",
+        "text": "Test text"
+    },
+    {
+        "title": "finish hw",
+        "text": "make sure to finish hw on time",
+        "id": "4b88ed08-164c-489c-b40a-56a884fd234d"
+    },
+    {
+        "title": "NEW NOTE",
+        "text": "THIS IS A NEW NOTE",
+        "id": "e3e20b3a-433b-4d99-8445-260052c12af9"
     }
 ]
